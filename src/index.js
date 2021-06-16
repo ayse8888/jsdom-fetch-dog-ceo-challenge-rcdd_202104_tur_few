@@ -40,13 +40,15 @@ console.log('%c HI', 'color: firebrick')
       li.innerHTML =dogKeys[i]
       li.setAttribute("class", "list")
       ul.appendChild(li)
-    }
-    // making li tags clickable and changing their colors
+      
+      
+      // making li tags clickable and changing their colors
       // console.log(li)
       li.addEventListener("click", function(e){
         // console.log("clicked")
         li.style.color = "pink"
       })
+    }
   }
   
   
