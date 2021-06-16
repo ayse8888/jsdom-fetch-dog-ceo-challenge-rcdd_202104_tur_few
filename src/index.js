@@ -34,7 +34,6 @@ console.log('%c HI', 'color: firebrick')
   // displaying breeds on the screen
   function renderBreed (breed) {
     const dogKeys = Object.keys(breed.message);
-    console.log(dogKeys)
     const ul = document.getElementById("dog-breeds")
     for(let i = 0; i < dogKeys.length; i++){
       const li = document.createElement("li")
@@ -58,8 +57,6 @@ console.log('%c HI', 'color: firebrick')
   
   const select = document.getElementById("breed-dropdown");
     select.addEventListener("change", function(){
-      const dogKeys = Object.keys(breed.message);
-      console.log(dogKeys)
       let result = select.value; 
       let ulTag = document.getElementById("dog-list")
       let liEl = document.createElement("li")
