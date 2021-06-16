@@ -40,41 +40,39 @@ console.log('%c HI', 'color: firebrick')
       li.innerHTML =dogKeys[i]
       li.setAttribute("class", "list")
       ul.appendChild(li)
-      
-      
-      // making li tags clickable and changing their colors
+    }
+    // making li tags clickable and changing their colors
       // console.log(li)
       li.addEventListener("click", function(e){
         // console.log("clicked")
         li.style.color = "pink"
       })
-    }
   }
   
   
   // Challenge4
   // filtering 
   
-  const select = document.getElementById("breed-dropdown");
-    select.addEventListener("change", function(){
-      let result = select.value; 
-      let ulTag = document.getElementById("dog-list")
-      let liEl = document.createElement("li")
-      ulTag.append(liEl)
+  // const select = document.getElementById("breed-dropdown");
+  //   select.addEventListener("change", function(){
+  //     let result = select.value; 
+  //     let ulTag = document.getElementById("dog-list")
+  //     let liEl = document.createElement("li")
+  //     ulTag.append(liEl)
           
-        if(result.innerText = "a") {
-          liEl.innerText = result
-        }
-        else if(result.innerText = "b"){
-          liEl.innerText = result
-        }
-        else if(result.innerText = "c"){
-          liEl.innerText = result
-        }
-        else if(result.innerText = "d"){
-          liEl.innerText = result
-        }
-    })
+  //       if(result.innerText = "a") {
+  //         liEl.innerText = result
+  //       }
+  //       else if(result.innerText = "b"){
+  //         liEl.innerText = result
+  //       }
+  //       else if(result.innerText = "c"){
+  //         liEl.innerText = result
+  //       }
+  //       else if(result.innerText = "d"){
+  //         liEl.innerText = result
+  //       }
+  //   })
   
   
   
